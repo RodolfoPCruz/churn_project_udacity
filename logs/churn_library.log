@@ -1,0 +1,18 @@
+root - INFO - Testing import_data: SUCCESS
+root - INFO - Sucess: All plots were successfully saved
+root - INFO - Sucess: feature Gender was encoded
+root - INFO - Sucess: feature Education_Level was encoded
+root - INFO - Sucess: feature Marital_Status was encoded
+root - INFO - Sucess: feature Income_Category was encoded
+root - INFO - Sucess: feature Card_Category was encoded
+root - INFO - Sucess: All categorical features were encoded
+root - INFO - Sucess: x_train was sucessfully created
+root - INFO - Sucess: y_train was sucessfully created
+root - INFO - Sucess: X_test was sucessfully created
+root - INFO - Sucess: y_train was sucessfully created
+root - INFO - Sucess: Train and test datasets were sucessfully created
+root - INFO - Success: The dataset contains only numeric columns
+root - INFO - Sucess: The two models were sucessfully saved
+root - INFO - Sucess: The Roc curved was sucessfully created and saved
+root - INFO - Sucess: The Logistic regression results and random forest results were saved
+root - INFO - Sucess: The feature importances were calculated and saved
