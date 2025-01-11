@@ -53,7 +53,7 @@ def param_file_path():
 @pytest.fixture
 def param_response():
     """
-    Provides the name of the column containing the expected output (churned or not)
+    Provides the name of the column containing the expected output (churn or not)
 
     Returns:
                 str: name of the column containing the expected output
@@ -150,7 +150,7 @@ def test_encoder_helper(
                 param_file_path (fixture): Provides the path to load the input data
         param_categorical_columns (fixture): Provides the columns to be encoded
                 param_response (fixture): Provides the name of the column
-                                          containing the expected output (churned or not)
+                                          containing the expected output (churn or not)
         """
 
     df = import_data(param_file_path)
@@ -174,7 +174,7 @@ def test_perform_feature_engineering(param_categorical_columns):
     """
     Test perform_feature_engineering for the creation of the training and testing datasets
     Asserts x_train and x_test have rows and columns
-        Asserts y_train and y_test have rows
+    Asserts y_train and y_test have rows
     Asserts x_train only contains numeric columns
 
         Args:

@@ -4,39 +4,21 @@
 churn_library.py
 ----------------
 ----------------
+Description:
 A module to predict whether a customer will churn.
 
-This module includes:
+Functions:
+- import_data: Loads data from a CSV file into a pandas DataFrame.
+- perform_eda : Conducts exploratory data analysis (EDA) and saves visualizations.
+- encoder_helper: Encodes categorical variables for modeling.
+- perform_feature_engineering: Performs feature engineering
+- train_models: Trains and evaluates machine learning models.
 
-This module includes:
-    -Reading csv files;
-    -Exploratory data analysis ( creation of bar plots, histograms, and heatmaps);
-    -Feature engineering;
-    -Training of machine learning models;
-    -Creation of classification reports and roc curves;
-    -Calculation of feature importance;
-    -The results of the exploratory data analysis and classification are saved in files.
+Usage:
+# Example usage of the churn_library module
 
-Example:
-
-    from churn_library import import_data
-    from churn_library import perform_eda
-    from churn_library import encoder_helper
-    from churn_library import perform_feature_engineering
-    from churn_library import train_models
-
-    dataframe = import_data("./data/bank_data.csv")
-    perform_eda(dataframe)
-    categorical_features = [
-        'Gender',
-        'Education_Level',
-        'Marital_Status',
-        'Income_Category',
-        'Card_Category']
-    dataframe = encoder_helper(dataframe, categorical_features)
-    input_train, input_test, output_train, output_test = perform_feature_engineering(
-        dataframe)
-    train_models(input_train, input_test, output_train, output_test)
+bash
+python churn_library.py 
 
 Author: Rodolfo Cruz
 Date: 2025-01-07
@@ -245,7 +227,7 @@ def classification_report_image(y_train,
 def roc_curve_plot(lr_model, rf_model, x_test, y_test):
     """
     Produces Roc for logistic regression and random forest models.
-    The curve wll be created using the test data and the resulting plot
+    The curve will be created using the test data and the resulting plot
     will stored in the images/results/roc_curve_result.png path
 
     Args:
